@@ -1,0 +1,84 @@
+<?php
+include"script/script.php";
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet"  href="style/style.css" type="text/css" />
+	<title>Tableau de synthèse</title>
+	<script type="text/javascript" src="scr/jquery.js"></script>
+	<script type="text/javascript" src="scr/sliding_effect.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+</head>
+<body>
+	<section id="colone">
+	<div id="logo">
+		<img src="style/images/logo.png" style="margin-left:12px;width:100%; height:70%;"/>
+		<style type="text/css">
+			#logo{
+				margin-left:-10%;
+			}
+		</style>
+	</div>
+	
+	<img src="style/images/barre.png" style="margin-top:5%;"/>
+	
+	<div id="choix">
+		<ul id="sliding-navigation">
+			<li class="sliding-element"><a href="index.php">Index</a></li>
+			<li class="sliding-element"><a href="tableau.html">Tableau</a></li>
+			<li class="sliding-element"><a href="work.html">Work</a></li>
+				<ul class="sliding-element">
+					<li class="sliding-element"><a href="#">1er année</a></li>
+						<ul>
+							<li class="sliding-element"><a href="stage1">CHUBordeaux(stage)</a></li>
+						</ul>
+					<li class="sliding-element"><a href="#">2em année</a></li>
+						<ul>
+							<li class="sliding-element"><a href="stage2">WebHera(stage)</a></li>
+							<li class="sliding-element"><a href="projet1">FreeFly(projet)</a></li>
+						</ul>
+				</ul>
+			<li class="sliding-element"><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	</section>
+	<style type="text/css">
+		#colone{
+			position:fixed;
+			width : 208px;
+			height:100%;
+			color: white;
+			z-index:8;
+		}
+		#choix {
+			margin-top:20%;
+			font-size:8px;
+		}
+	
+		
+	</style>
+	
+	
+	<section id="panneau">
+	<div class="pic">
+		<iframe src="style/images/tableau.pdf"  align="middle" style="height:60em;"></iframe>
+	</div>
+		<object data="tableauS.pdf" type="application/pdf"></object>
+		<style type="text/css">
+		#panneau {
+		margin-top:-7.9%;
+		margin-left :10.9%; 
+		width:88.5%;
+		color : white;
+		}
+		</style>
+	</section>
+
+
+
+	
+</body>
+</html>

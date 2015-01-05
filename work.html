@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet"  href="style/style.css" type="text/css" />
+	<title>Accueil</title>
+	<script type="text/javascript" src="scr/jquery.js"></script>
+	<script type="text/javascript" src="scr/sliding_effect.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" /> 
+
+</head>
+<body>
+	<section id="colone">
+	<div id="logo">
+		<img src="style/images/logo.png" style="margin-left:12px;width:100%; height:70%;"/>
+		<style type="text/css">
+			#logo{
+				margin-left:-10%;
+			}
+		</style>
+	</div>
+	
+	<img src="style/images/barre.png" style="margin-top:5%;"/>
+	
+	<div id="choix">
+		<ul id="sliding-navigation">
+			<li class="sliding-element"><a href="index.php">Index</a></li>
+			<li class="sliding-element"><a href="tableau.html">Tableau</a></li>
+			<li class="sliding-element"><a href="#">Work</a></li>
+				<ul class="sliding-element">
+					<li class="sliding-element"><a href="#">1er annÃ©e</a></li>
+						<ul>
+							<li class="sliding-element"><a href="stage1">CHUBordeaux(stage)</a></li>
+						</ul>
+					<li class="sliding-element"><a href="#">2em annÃ©e</a></li>
+						<ul>
+							<li class="sliding-element"><a href="stage2">WebHera(stage)</a></li>
+							<li class="sliding-element"><a href="projet1">FreeFly(projet)</a></li>
+						</ul>
+				</ul>
+			<li class="sliding-element"><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	</section>
+	<style type="text/css">
+		#colone{
+			position:fixed;
+			width : 208px;
+			height:100%;
+			color: white;
+			z-index:8;
+		}
+		#choix {
+			margin-top:20%;
+			font-size:8px;
+		}
+	
+		
+	</style>
+	
+	<section class="dossier">
+		<article  id="annee1" style="display:inline-block">
+			<h1>1er année</h1>
+			<h3>Mise en place d'un service médical :</h3>
+				<p>Compétence : </p>
+					<p>A1.1.1 Analyse du cahier des charges d'un service à produire</br>
+						A1.1.3 Etudes des exigences liées à la qualité attendue d'un  service</br>
+						A1.2.3 Evaluation des risques liés à l'utilisateur</br>
+						A1.3.1 Accompagnement de la mise en place d'un service</br>
+						A1.3.4 Déploiement d'un service</br>
+						A1.4.1 Participation à un projet</br>
+						A2.1.1 Accompagnement des utilisateurs dans la prise en main d'un service </br>
+						A2.2.2 Suivi et réponse à des demandes d'assistance</br>
+						A2.2.3 Répondre à une interruption de service</br>
+						A4.1.8 Réalisatio  de tests nécessaires à la validation d'élément adaptés ou développer</br>
+						A4.2.1 Analyse et correction d'un dysfonctionnement, d'un problème de qualité de services ou sécurité</br>
+						A5.1.3 Suivi d'une configuration de ses éléments</br>
+						A5.2.4 Etude d'une technologie d'un composant d'un outil, ou d'une méthode.</br>
+					</p>
+		</article>
+		<article id="anne2" style="display:inline-block">
+			<h2>2em année</h2>
+			<h3>FreeFly :</h3>
+				<p>Compétence :</p>
+		</article>
+	<style type="text/css">
+		.dossier{
+			color:white;
+			margin-left:17%;
+			padding-top:10%;
+		}
+	</style>
+	</section>
+</body>
+</html>
