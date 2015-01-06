@@ -14,7 +14,10 @@
        
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+		
+		<link rel="stylesheet" type="text/css" href="backup/connexion/css/style.css" />
+		<script src="backup/connexion/js/modernizr.custom.63321.js"></script>
+		
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
@@ -38,7 +41,7 @@
     <div class="navbar-collapse collapse sidebar-navbar-collapse">
       <ul class="nav navbar-nav" id="sidenav01">
         <li class="active">
-          <a href="#" data-toggle="collapse" data-target="#toggleDemo0" data-parent="#sidenav01" class="collapsed">
+          <a href="#main" data-toggle="collapse" data-target="#toggleDemo0" data-parent="#sidenav01" class="collapsed">
 			<img src="img/logo.png" class="logo"/>
           </a>
           
