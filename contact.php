@@ -11,17 +11,40 @@ session_start();
 		<div class="container">
 			
 				<div class="page-header">
-					<h1><span class="glyphicon glyphicon-upload"></span> Contact</h1>
+					<h1><span class="glyphicon glyphicon-user"></span> Contact</h1>
 				</div>
-				<form id="formulaire" method="post" action="">
-					<p style="display:inline-block; padding-left:1%"><span class="glyphicon glyphicon-user"></span> Vôtre nom et prénom: <input type="text" name="nom" size="30"/></p></br>
-					<p style="display:inline-block; padding-left:1%"><span class="glyphicon glyphicon-envelope"></span> Vôtre email: <span style="color:#ff0000;">*</span>:<input type="text" name="email" size="30"/></p></br>
-					<p style="display:inline-block; padding-left:1%"><span class="glyphicon glyphicon-pencil"></span> Message<span style="color:#ff0000;">*</span>:</span></p>
-					<textarea name="message" col="60" rows="10" ></textarea>
-					<p><input type="submit" name="submit" value="Envoyer" style="float:right; margin-right:5%;"/></p>
-				</form>
-				
-				<div id="info">
+				<section id="main">
+					<form class="form-3">
+						<p class="clearfix">
+							<label for="login">Nom d'utilisateur</label>
+							<input type="text" name="login" id="login" placeholder="Username">
+						</p>
+						<p class="clearfix">
+							<label for="password">Mots de passe</label>
+							<input type="password" name="password" id="password" placeholder="Password"> 
+						</p>
+						<p class="clearfix">
+							<input type="checkbox" name="remember" id="remember">
+							<label for="remember">Se souvenir</label>
+						</p>
+						<p class="clearfix">
+							<input type="submit" name="submit" value="Connexion" action="">
+						</p> 
+						<?php 
+						connexion();
+						?>
+					</form>​
+				</section>
+				<div id="formulaire">
+					<form  method="post" action="" >
+						<p style="display:inline-block; padding-left:1%"><span class="glyphicon glyphicon-user"></span> Vôtre nom et prénom: <input type="text" name="nom" size="30"/></p></br>
+						<p style="display:inline-block; padding-left:1%"><span class="glyphicon glyphicon-envelope"></span> Vôtre email: <span style="color:#ff0000;">*</span>:<input type="text" name="email" size="30"/></p></br>
+						<p style="display:inline-block; padding-left:1%"><span class="glyphicon glyphicon-pencil"></span> Message<span style="color:#ff0000;">*</span>:</span></p>
+						<textarea name="message" col="60" rows="10" ></textarea>
+						<p><input type="submit" name="submit" value="Envoyer" style="float:right; margin-right:5%;"/></p>
+					</form>
+				</div>	
+				<div id="info" >
 					<p>Frank Clemenceau<br/>
 					83 Av Bon Air<br/>
 					33700 MERIGNAC

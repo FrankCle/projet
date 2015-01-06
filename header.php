@@ -53,7 +53,7 @@
           </a>
           <div class="collapse" id="toggleDemo" style="height: 0px;">
             <ul class="nav nav-list">
-              <li><a href="#"><span class="glyphicon glyphicon-plus"></span> Stage - CHU Bordeaux</a></li>
+              <li><a href="chu.php"><span class="glyphicon glyphicon-plus"></span> Stage - CHU Bordeaux</a></li>
             </ul>
           </div>
         </li>
@@ -63,13 +63,14 @@
           </a>
           <div class="collapse" id="toggleDemo2" style="height: 0px;">
             <ul class="nav nav-list">
-              <li><a href="#"><span class="glyphicon glyphicon-cloud"></span>  PPE - FreeFly</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-glass"></span>  Stage - Kekette</a></li>
+              <li><a href="freefly.php"><span class="glyphicon glyphicon-cloud"></span>  PPE - FreeFly</a></li>
+              <li><a href="keke.php"><span class="glyphicon glyphicon-glass"></span>  Stage - Kekette</a></li>
             </ul>
           </div>
         </li>
        
-        <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Tableau </a></li>
+        <li><a href="tableau.php"><span class="glyphicon glyphicon-tasks"></span> Tableau </a></li>
+        <li><a href="suivi.php"><span class="glyphicon glyphicon-flag"></span> Suivis </a></li>
         <li><a href="contact.php"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
       </ul>
 			</div><!--/.nav-collapse -->

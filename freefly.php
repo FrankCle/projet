@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include"scripts/connexion.php";
 session_start();
 ?>
@@ -6,15 +6,16 @@ session_start();
 <?php 
 	include"header.php";
 ?>
+	
 <div class="col-sm-9 col-md-10 affix-content" id="conteneur">
-		<img id="baniere" src="img/presentation.png" style="width:105.2%;"/>
+		<img id="baniere" src="img/freefly.png" style="width:105.2%;"/>
+		
 		<div class="container">
-			
-				<div class="page-header">
-					<h1><span class="glyphicon glyphicon-home"></span> Présentation</h1>
-				</div>
-		</div>
-		<section id="main">
+			<div class="page-header">
+				<h1><span class="glyphicon glyphicon-cloud"></span> PPE - FreeFly Cloud</h1>
+				<p>Deuxième année</p>
+			</div>
+			<section id="main">
 				<form class="form-3">
 				    <p class="clearfix">
 						<label for="login">Nom d'utilisateur</label>
@@ -35,26 +36,12 @@ session_start();
 					connexion();
 					?>
 				</form>​
-		</section>
-		<section id="presentation">
-			<p class="cadre" >Bonjour, Mon nom est Frank Clemenceau, </br>
-			je suis élève en SIO(Systeme Informatique Organisation) 2em année et voici mon portfolio.</br>
-			</p>
-		
-		
-			<p>
-			J'ai 20ans et je suis née le 25 mars 1994 à Nancy en France.</br>
-			</br>
-			J'apprend à manipuler les outils de programmation </br>
-			C'est agréable de concevoir , j'aime réaliser et animer. </br>
-			</br>
-			Mes domaines d'expertise se situe vers le web et le graphisme.</br>
-			J'aime se que je fais bien que je m'arrache les cheveux en essayant de m'ameliorer.
-			</p>
-		</section>
+			</section>	
+		</div>
 </div>
+		
+	
 
 <?php 
 	include"footer.php";
 ?>
-
