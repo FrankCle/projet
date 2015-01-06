@@ -7,6 +7,7 @@ session_start();
 	include"header.php";
 ?>
 <div class="col-sm-9 col-md-10 affix-content" id="conteneur">
+		<img id="baniere" src="img/presentation.png" style="width:105.2%;"/>
 		<div class="container">
 			
 				<div class="page-header">
@@ -34,7 +35,7 @@ session_start();
 					connexion();
 					?>
 				</form>​
-			</section>
+		</section>
 		<section id="presentation">
 			<p class="cadre" >Bonjour, Mon nom est Frank Clemenceau, </br>
 			je suis élève en SIO(Systeme Informatique Organisation) 2em année et voici mon portfolio.</br>

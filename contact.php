@@ -7,6 +7,7 @@ session_start();
 	include"header.php";
 ?>
 <div class="col-sm-9 col-md-10 affix-content" id="conteneur">
+		<img id="baniere" src="img/contact.png"/>
 		<div class="container">
 			
 				<div class="page-header">
@@ -39,9 +40,6 @@ session_start();
 					</p>
 				</div>
 				
-		</div>
-		<div id="conteneur">
-		
 		</div>
 		
 		
