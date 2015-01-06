@@ -43,7 +43,7 @@
           </a>
           
         </li>
-		 <li><a href="#"><span class="glyphicon glyphicon-home"></span> Index</a></li>
+		 <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Index</a></li>
 		<li class="active">
           <a href="#" data-toggle="collapse" data-target="#toggleDemo" data-parent="#sidenav01" class="collapsed">
           <span class="glyphicon glyphicon-inbox"></span> Première Année <span class="caret pull-right"></span>
@@ -67,7 +67,7 @@
         </li>
        
         <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Tableau </a></li>
-        <li><a href=""><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+        <li><a href="contact.php"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
       </ul>
 			</div><!--/.nav-collapse -->
 		</div>
