@@ -1,3 +1,8 @@
+<?php
+	session_start();
+	include"scripts/connexion.php";
+	include "scripts/membre/membre.php";
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -24,7 +29,40 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  
 		
+				<?php
+				if(isset($_SESSION["login"])){
+					echo'<a href="deconnexion.php" style="color:white;">DECONNEXION</a>';
+				}
+				else {
+				
+				Membre::connexion();
+				
+				echo'
+				<form class="form-3" method="POST" action="'.$_SERVER['PHP_SELF'].'" id="form-co">
+				    <p class="clearfix">
+						<label for="login">Nom d\'utilisateur</label>
+				        <input type="text" name="login" id="login" placeholder="Username">
+				    </p>
+				    <p class="clearfix">
+						<label for="password">Mots de passe</label>
+				        <input type="password" name="pass" id="pass" placeholder="Password"> 
+				    </p>
+				    <p class="clearfix">
+				        <input type="checkbox" name="remember" id="remember">
+						<label for="remember">Se souvenir</label>
+				    </p>
+				    <p class="clearfix">
+						<input type="submit" name="go_login" id="go_login" value="Connexion" >
+				    </p> 
+				</form>​';
+				}
+				?>
+		
+	
+</div>
 	<div class="row affix-row">
 		<div class="col-sm-3 col-md-2 affix-sidebar">
 			<div class="sidebar-nav">
@@ -41,9 +79,9 @@
     <div class="navbar-collapse collapse sidebar-navbar-collapse">
       <ul class="nav navbar-nav" id="sidenav01">
         <li class="active">
-          <a href="#main" data-toggle="collapse" data-target="#toggleDemo0" data-parent="#sidenav01" class="collapsed">
-			<img src="img/logo.png" class="logo"/>
-          </a>
+         
+			<img src="img/logo.png" class="logo" data-toggle="modal" data-target="#myModal"/>
+         
           
         </li>
 		 <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Index</a></li>
@@ -52,7 +90,7 @@
           <span class="glyphicon glyphicon-inbox"></span> Première Année <span class="caret pull-right"></span>
           </a>
           <div class="collapse" id="toggleDemo" style="height: 0px;">
-            <ul class="nav nav-list">
+			<ul class="nav nav-list" id="ssmenu">
               <li><a href="chu.php"><span class="glyphicon glyphicon-plus"></span> Stage - CHU Bordeaux</a></li>
             </ul>
           </div>
@@ -62,7 +100,7 @@
           <span class="glyphicon glyphicon-inbox"></span>  Deuxième Année <span class="caret pull-right"></span>
           </a>
           <div class="collapse" id="toggleDemo2" style="height: 0px;">
-            <ul class="nav nav-list">
+			<ul class="nav nav-list" id="ssmenu">
               <li><a href="freefly.php"><span class="glyphicon glyphicon-cloud"></span>  PPE - FreeFly</a></li>
               <li><a href="keke.php"><span class="glyphicon glyphicon-glass"></span>  Stage - Kekette</a></li>
             </ul>
@@ -77,3 +115,7 @@
 		</div>
 		</div>
 	</div>
+	
+
+			
+			

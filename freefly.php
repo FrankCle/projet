@@ -1,8 +1,3 @@
-<?php
-include"scripts/connexion.php";
-session_start();
-?>
-
 <?php 
 	include"header.php";
 ?>
@@ -14,29 +9,32 @@ session_start();
 			<div class="page-header">
 				<h1><span class="glyphicon glyphicon-cloud"></span> PPE - FreeFly Cloud</h1>
 				<p>Deuxième année</p>
+			<section id="presentation">
+				<h2>Service de cloud</h2>
+				<br>
+				<h4>Description :</h4>
+				<p>Ayant besoin de stocker des fichiers sans avoir les moyens ou le matériels.
+				Freefly vise cet objectif sur le plan ordinateur comme téléphone portable.
+				Avec un site web pour la partie logiciel sur ordinateur, et le développement d'une application mobile.</p>
+				<br>
+				<h4>Contexte :</h4>
+				<p>Le syteme de cloud se développe de plus en plus que ce soit dans les petites PME commes les grosses multinational.
+				Dans ce contexte Freefly compte se poser sur le marché via des innovations banal et pour utile à tout le monde.
+				</p>
+				<br>
+				<h4>Moyens :</h4>
+				<p>Ecrans, souris, clavier, ordinateurs portable, téléphone portable, bdd virtuelle.
+				</p>
+				<br>
+				<h4>Avis personnel :</h4>
+				<p>PPE très intéressant, que ce soit au niveau de la technique à mettre en place, que les idées à trouver ou à développer pour le rendre potentiel sur le marché.
+				</p>
+				<br>
+				<h4>Activité du référentiel mis en oeuvre :</h4>
+			</section>
+				
+				
 			</div>
-			<section id="main">
-				<form class="form-3">
-				    <p class="clearfix">
-						<label for="login">Nom d'utilisateur</label>
-				        <input type="text" name="login" id="login" placeholder="Username">
-				    </p>
-				    <p class="clearfix">
-						<label for="password">Mots de passe</label>
-				        <input type="password" name="password" id="password" placeholder="Password"> 
-				    </p>
-				    <p class="clearfix">
-				        <input type="checkbox" name="remember" id="remember">
-						<label for="remember">Se souvenir</label>
-				    </p>
-				    <p class="clearfix">
-						<input type="submit" name="submit" value="Connexion" action="">
-				    </p> 
-					<?php 
-					connexion();
-					?>
-				</form>​
-			</section>	
 		</div>
 </div>
 		

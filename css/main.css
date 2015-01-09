@@ -131,7 +131,7 @@
 }
 
 .navbar-default .navbar-nav > li > a{
-	color : #FFF2D9;
+	color : #EDF7F7;
 }
 
 
@@ -139,7 +139,9 @@
 
 /* logo */
 img.logo{
-	width:14%;
+	width:15%;
+	background-color:#414042;
+	border-radius:50%;
 	}
 	
 /* contenu page */
@@ -148,6 +150,7 @@ img.logo{
 	border: 1px solid #333;
 	color:#EDF7F7;
 	text-shadow: 8px 8px 12px black;
+	padding-bottom:5%;
 }
 
 #baniere{
@@ -155,6 +158,29 @@ img.logo{
 	
 }
 
+h2{
+	margin-left:-10%;
+}
+
+h4{
+	text-decoration:underline;
+	margin-left:-5%;
+}
+
+/*connexion*/
+.modal-dialog {
+	background-color:#414042;
+	text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
+	color:red;
+	width:50%;
+	height:
+}
+.message-avertissement{
+	float:right;
+	background-color:white;
+	box-shadow:2px 1px 20px black;
+	color:black;
+}
 
 
 /* presentation */
@@ -163,8 +189,11 @@ img.logo{
 	margin-right:10%;
 	margin-left:10%;
 	font-size:18px;
+}
+.cadre{
 	text-align:center;
 }
+
 
 
 /* contact*/
@@ -186,9 +215,17 @@ img.logo{
 /* tableau */
 #tableau{
 	height:50%;
-	margin-top:6%;
+	margin-top:12%;
 	margin-left:5%;
 	width:88.5%;
-	
-	max-height:70%;
+	margin-bottom:5%;
+	border:5px solid grey;
+	border-radius:2%;
+	box-shadow:2px 1px 20px black;
+}
+
+/*suivi*/
+#comm {
+	width:100%;
+	color:#5A5B5D;
 }

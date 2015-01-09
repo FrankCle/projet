@@ -1,8 +1,4 @@
-﻿<?php
-include"scripts/connexion.php";
-session_start();
-?>
-
+﻿
 <?php 
 	include"header.php";
 ?>
@@ -14,30 +10,10 @@ session_start();
 					<h1><span class="glyphicon glyphicon-home"></span> Présentation</h1>
 				</div>
 		</div>
-		<section id="main">
-				<form class="form-3">
-				    <p class="clearfix">
-						<label for="login">Nom d'utilisateur</label>
-				        <input type="text" name="login" id="login" placeholder="Username">
-				    </p>
-				    <p class="clearfix">
-						<label for="password">Mots de passe</label>
-				        <input type="password" name="password" id="password" placeholder="Password"> 
-				    </p>
-				    <p class="clearfix">
-				        <input type="checkbox" name="remember" id="remember">
-						<label for="remember">Se souvenir</label>
-				    </p>
-				    <p class="clearfix">
-						<input type="submit" name="submit" value="Connexion" action="">
-				    </p> 
-					<?php 
-					connexion();
-					?>
-				</form>​
-		</section>
-		<section id="presentation">
-			<p class="cadre" >Bonjour, Mon nom est Frank Clemenceau, </br>
+		
+		
+		<section id="presentation" class="cadre">
+			<p  >Bonjour, Mon nom est Frank Clemenceau, </br>
 			je suis élève en SIO(Systeme Informatique Organisation) 2em année et voici mon portfolio.</br>
 			</p>
 		
