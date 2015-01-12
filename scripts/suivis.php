@@ -1,24 +1,54 @@
-
 <?php
+
 class Suivi{
 	public static function ajout(){
-		GLOBAL $bdd;
+
 		if(isset($_POST['suivi'])){
 			$envoi = $_POST['commentaire'];
-			$query = mysqli_query($bdd, "INSERT INTO suivi FROM commentaire;");
-			echo('<p style="color:green">Commentaire ajouté</p>');
+			
+			//Appelle de la function dans la classe pour connexion a la bdd
+			Connexion::connecter();
+			
+			$res = Connexion::$bdd->prepare('INSERT INTO suivi (commentaire) VALUES ("'.$envoi.'");');
+			$res->execute();
+			
+			//Déconnexion de la bdd pour sécurisé
+			Connexion::deconnecter();
+			
+			//condition?>
+			<script>
+				window.location.replace("http://localhost/projet/suivi.php");
+			</script>
+			<?php echo('<p style="color:green">Commentaire ajouté</p>');
 		}
-		if($envoi == null){
+		else {
 			echo('<p style="color:red">Il n\'y a rien de rempli</p>');
 		}
 	}
-}
-?>
 
-<?php 
-	function afficher(){
-		$sql = mysqli_query("SELECT * FROM commentaires ORDER BY id Limit 0, 20");
-		$data = mysqli_fetch_array($sql);
-		echo $data['id']." ".$data["commentaires"];
+//essaye
+	public static function afficher(){
+	
+		Connexion::connecter();
+		
+		$res = Connexion::$bdd->prepare('SELECT * FROM suivi ORDER BY id Limit 0, 20');
+		$res->execute();
+			
+		//Déconnexion de la bdd pour sécurisé
+		Connexion::deconnecter();
+		
+		
+		// les résultats  sont retournés dans un liste
+		$ligneSuivi = array();
+		
+		//la boucle while affiche la liste des commentaires
+		while($ligne = $res->fetch(PDO::FETCH_ASSOC)) {
+			$uneLigneSuivi = new construct_Suivi($ligne['id'], $ligne['commentaire']);
+			$ligneSuivi[] = $uneLigneSuivi;
+		}
+		return $ligneSuivi;		
+		
 	}
+	
+}
 ?>

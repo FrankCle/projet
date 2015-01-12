@@ -3,6 +3,7 @@
 		public static $bdd;
 	 
 		public static function connecter(){
+			//info de la db
 			$dsn = "mysql:host=localhost;dbname=portfolio";
 			$user = "root";
 			$pass = "";
@@ -20,7 +21,6 @@
 	
 		}
 	
-	}
-		
+	}		
 ?>
 

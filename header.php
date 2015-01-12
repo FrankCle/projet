@@ -1,7 +1,9 @@
 <?php
 	session_start();
-	include"scripts/connexion.php";
-	include "scripts/membre/membre.php";
+	require_once "scripts/connexion.php";
+	require_once "scripts/construct.php";
+	require_once "scripts/membre/membre.php";
+	require_once "scripts/suivis.php";
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
