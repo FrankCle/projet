@@ -25,10 +25,10 @@
 		?>
 			
 		<?php
-			
+			Suivi::ajout();
 			echo '<div id="ajoutcomm">
-					<form method:"POST" action="ajout">
-						<textarea id="comm" name="comm" rows="10" cols="70">Saisir un texte ici.</textarea>
+					<form method="POST" action="'.$_SERVER['PHP_SELF'].'">
+						<textarea id="commentaire" name="commentaire" rows="10" cols="70" value="Saisir un texte ici." style="color:black"></textarea>
 						<br>
 						<input type="submit" name="suivi" id="suivi" value="Ajouter" style="float:right;">
 					</from>

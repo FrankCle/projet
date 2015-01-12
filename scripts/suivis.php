@@ -1,16 +1,18 @@
 
 <?php
-	function ajout(){
-		GLOBAL $idconn;
+class Suivi{
+	public static function ajout(){
+		GLOBAL $bdd;
 		if(isset($_POST['suivi'])){
-			$envoi = $_POST['comm'];
-			$query = mysqli_query($idconn,"INSERT INTO suivi FROM commentaire;");
+			$envoi = $_POST['commentaire'];
+			$query = mysqli_query($bdd, "INSERT INTO suivi FROM commentaire;");
+			echo('<p style="color:green">Commentaire ajouté</p>');
 		}
 		if($envoi == null){
-			print("<p>Il n'y a rien de rempli</p>");
+			echo('<p style="color:red">Il n\'y a rien de rempli</p>');
 		}
 	}
-
+}
 ?>
 
 <?php 

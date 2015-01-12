@@ -3,7 +3,7 @@
 	include"header.php";
 ?>
 <div class="col-sm-9 col-md-10 affix-content" id="conteneur">
-		<img id="baniere" src="img/contact.png"/>
+		<img id="baniere" src="img/contact.png" style="width:105.2%;"/>
 		<div class="container">
 			
 				<div class="page-header">
