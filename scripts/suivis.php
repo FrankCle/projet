@@ -5,28 +5,29 @@ class Suivi{
 
 		if(isset($_POST['suivi'])){
 			$envoi = $_POST['commentaire'];
-			
+			$datetime= date("Y-m-d");
 			//Appelle de la function dans la classe pour connexion a la bdd
 			Connexion::connecter();
 			
-			$res = Connexion::$bdd->prepare('INSERT INTO suivi (commentaire) VALUES ("'.$envoi.'");');
+			$res = Connexion::$bdd->prepare('INSERT INTO suivi (commentaire, date) VALUES ("'.$envoi.'","'.$datetime.'");');
+			
 			$res->execute();
 			
 			//Déconnexion de la bdd pour sécurisé
 			Connexion::deconnecter();
 			
-			//condition?>
+			//condition
+			?>
 			<script>
 				window.location.replace("http://localhost/projet/suivi.php");
 			</script>
-			<?php echo('<p style="color:green">Commentaire ajouté</p>');
-		}
-		else {
-			echo('<p style="color:red">Il n\'y a rien de rempli</p>');
+			<?php
+			
+			echo('<p style="color:green">Commentaire ajouté</p>');
 		}
 	}
 
-//essaye
+
 	public static function afficher(){
 	
 		Connexion::connecter();
@@ -43,7 +44,7 @@ class Suivi{
 		
 		//la boucle while affiche la liste des commentaires
 		while($ligne = $res->fetch(PDO::FETCH_ASSOC)) {
-			$uneLigneSuivi = new construct_Suivi($ligne['id'], $ligne['commentaire']);
+			$uneLigneSuivi = new construct_Suivi($ligne['id'], $ligne['commentaire'], $ligne['date']);
 			$ligneSuivi[] = $uneLigneSuivi;
 		}
 		return $ligneSuivi;		

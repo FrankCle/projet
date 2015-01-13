@@ -36,7 +36,7 @@
 		
 				<?php
 				if(isset($_SESSION["login"])){
-					echo'<a href="deconnexion.php" style="color:white;">DECONNEXION</a>';
+					echo'<a href="Membre::deconnecter();"  class="message-avertissement">DECONNEXION</a>';
 				}
 				else {
 				

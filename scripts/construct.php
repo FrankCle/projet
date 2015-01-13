@@ -3,11 +3,13 @@
 class construct_Suivi {
 	private $id;
 	private $commentaire;
+	private $datetime;
 	
 	//constructeur de la classe
-	function __construct($p_id, $p_commentaire) {
+	function __construct($p_id, $p_commentaire, $p_datetime) {
 		$this->id = $p_id;
-		$this->commentaire = $p_commentaire;	
+		$this->commentaire = $p_commentaire;
+		$this->datetime = $p_datetime;
 	}
 	
 	// get envoi

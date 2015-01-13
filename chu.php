@@ -13,7 +13,7 @@
 				<p>Première année</p>
 			
 		<section id="presentation">
-			<h2>Mise en place d'un service médical</h1>
+			<h2>Mise en place d'un service médical</h2>
 			<br>
 			<h4>Description :</h4><p>Installation et mise en place d'outil informatique. Remplacement de matériel informatique bureautique pour causes d'anciennetée suite à la demande de l'hopital Saint André.</p>
 			<br>
