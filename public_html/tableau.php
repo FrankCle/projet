@@ -4,7 +4,7 @@
 ?>
 	
 <div class="col-sm-9 col-md-10 affix-content" id="conteneur">
-		<img id="baniere" src="img/tableau.png" style="width:105.2%;"/>
+		<img id="baniere" src="img/tableau.png" />
 		
 		<div class="container">
 			<div class="page-header">

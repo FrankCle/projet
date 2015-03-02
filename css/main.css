@@ -156,9 +156,8 @@ img.logo{
 }
 
 #baniere{
-	margin-left:-2.7%;
-	width:100%;
-	height:36.5%;
+	margin-left:-3%;
+	height:30.6%;
 	
 }
 
@@ -219,7 +218,7 @@ h4{
 /* tableau */
 #tableau{
 	height:50%;
-	margin-top:12%;
+	margin-top:10%;
 	margin-left:5%;
 	width:88.5%;
 	margin-bottom:5%;
@@ -229,8 +228,6 @@ h4{
 }
 
 /*suivi*/
-
-
 .comm {
 	display:inline-block;
 	padding-left:5%;

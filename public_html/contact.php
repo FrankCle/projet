@@ -3,7 +3,7 @@
 	include"header.php";
 ?>
 <div class="col-sm-9 col-md-10 affix-content" id="conteneur">
-		<img id="baniere" src="img/contact.png" style="width:105.2%;"/>
+		<img id="baniere" src="img/contact.png"/>
 		<div class="container">
 			
 				<div class="page-header">
@@ -11,19 +11,15 @@
 				</div>
 				
 				</section>
-                
 				<div id="formulaire">
 					<form  method="post" action="" >
-                       
-    
-                        
-						<p style="display:inline-block; padding-left:1%"><span class="glyphicon glyphicon-user"></span> Vôtre nom : <input type="text" name="nom" size="30"/></p><br/>
-						<p style="display:inline-block; padding-left:1%"><span class="glyphicon glyphicon-envelope"></span> Vôtre email <span style="color:#ff0000;">*</span>:<input type="text" name="email" size="30"/></p><br/>
-                        <p style="display:inline-block; padding-left:1%"><span class="glyphicon glyphicon-pencil"></span> Message <span style="color:#ff0000;">*</span> :</p>
+						<p style="display:inline-block; padding-left:1%"><span class="glyphicon glyphicon-user"></span> Vôtre nom et prénom: <input type="text" name="nom" size="30"/></p></br>
+						<p style="display:inline-block; padding-left:1%"><span class="glyphicon glyphicon-envelope"></span> Vôtre email: <span style="color:#ff0000;">*</span>:<input type="text" name="email" size="30"/></p></br>
+						<p style="display:inline-block; padding-left:1%"><span class="glyphicon glyphicon-pencil"></span> Message<span style="color:#ff0000;">*</span>:</span></p>
 						<textarea name="message" col="60" rows="10" ></textarea>
-						<p><input type="submit" name="envoyer" value="Envoyer" style="float:right; margin-right:5%;"/></p>
+						<p><input type="submit" name="submit" value="Envoyer" style="float:right; margin-right:5%;"/></p>
 					</form>
-				</div>
+				</div>	
 				<div id="info" >
 					<p>Frank Clemenceau<br/>
 					83 Av Bon Air<br/>

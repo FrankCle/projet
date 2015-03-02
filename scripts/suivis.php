@@ -5,11 +5,11 @@ class Suivi{
 
 		if(isset($_POST['suivi'])){
 			$envoi = $_POST['commentaire'];
-			$datetime= date("Y-m-d");
+			$date= date("Y-m-d");
 			//Appelle de la function dans la classe pour connexion a la bdd
 			Connexion::connecter();
 			
-			$res = Connexion::$bdd->prepare('INSERT INTO suivi (commentaire, date) VALUES ("'.$envoi.'","'.$datetime.'");');
+			$res = Connexion::$bdd->prepare('INSERT INTO suivi (commentaire, date) VALUES ("'.$envoi.'","'.$date.'");');
 			
 			$res->execute();
 			
@@ -19,7 +19,7 @@ class Suivi{
 			//condition
 			?>
 			<script>
-				window.location.replace("http://localhost/projet/suivi.php");
+                window.location.replace("http://portfolionelka.esy.es/suivi.php");
 			</script>
 			<?php
 			
@@ -32,7 +32,7 @@ class Suivi{
 	
 		Connexion::connecter();
 		
-		$res = Connexion::$bdd->prepare('SELECT * FROM suivi ORDER BY id Limit 0, 20');
+		$res = Connexion::$bdd->prepare('SELECT * FROM suivi ORDER BY id DESC Limit 0, 5');
 		$res->execute();
 			
 		//Déconnexion de la bdd pour sécurisé
@@ -44,7 +44,7 @@ class Suivi{
 		
 		//la boucle while affiche la liste des commentaires
 		while($ligne = $res->fetch(PDO::FETCH_ASSOC)) {
-			$uneLigneSuivi = new construct_Suivi($ligne['id'], $ligne['commentaire'], $ligne['date']);
+			$uneLigneSuivi = new construct_Suivi($ligne['id'], $ligne['commentaire'],  strtotime($ligne['date']));
 			$ligneSuivi[] = $uneLigneSuivi;
 		}
 		return $ligneSuivi;		
